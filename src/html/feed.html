@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('templates/head.html')
+	<title>Coin Duck - новости блокчейн</title>
+</head>
+<body>
+	<header class="page-header">
+		@@include('templates/header.html',{"feed":true})
+		
+		<nav class="breadcrumps-navigation mobile-hidden">
+			<div class="content-wrap">
+				<ul class="breadcrumps list-reset row">
+					<li>
+						<a class="breadcrumps-link" href="index.html">Главная</a>
+					</li>
+					<li>
+						<a class="breadcrumps-link active-link">Лента</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="content-wrap">
+			<div class="row">
+				<!--main column-->
+				<main class="content-main-col col-md-9">
+					<article class="feed-content site-block">
+						<div class="site-block-header feed-block-header">
+							<h1 class="header-label">Лента новостей</h1>
+							<ul class="hashtag-list list-reset">
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Запреты в Китае</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Хардфорк</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Политика</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#ICO</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Bitcoin</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Майнинг</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Blockchain</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#SegWit2x</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Запреты ICO</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Базантиум</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Крипторубль</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Аналитика</a>
+								</li>
+								<li class="hashtag-item">
+									<a class="hashtag-link" href="feed_category.html">#Статьи для новичков</a>
+								</li>
+							</ul>
+						</div>
+						@@include('templates/feed-article-list.html')
+						
+						<section class="page-navigation">
+							<button class="load-more-btn" type="button">показать еще</button>
+							<nav class="paginator">
+								<ul class="paginator-list list-reset">
+									<li class="paginator-item">
+										<a class="page-link active-page">1</a>
+									</li>
+									<li class="paginator-item">
+										<a class="page-link" href="#">2</a>
+									</li>
+									<li class="paginator-item">
+										<a class="page-link" href="#">3</a>
+									</li>
+									<li class="paginator-item">
+										<span class="paginator-dots">...</span>
+									</li>
+									<li class="paginator-item">
+										<a class="page-link" href="#">6</a>
+									</li>
+								</ul>
+							</nav>
+						</section>
+					</article>
+				</main>
+				<!-- /main column-->
+				
+				<!-- aside column -->
+				@@include('templates/content-aside-col.html',{"feed":true})
+				<!-- /aside column -->
+			</div>
+	</div>
+	
+	<footer class="page-footer">
+		@@include('templates/footer.html')
+	</footer>
+
+	@@include('templates/scripts.html')
+</body>
+</html>

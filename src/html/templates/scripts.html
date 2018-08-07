@@ -1,0 +1,38 @@
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/script.min.js"></script>
+<script>
+	crypt_multi_num_cur = "3";
+	crypt_base_cur_0 = "BTC";crypt_target_cur_0 = "USD";crypt_base_cur_1 = "ETH";crypt_target_cur_1 = "USD";crypt_base_cur_2 = "ZEC";crypt_target_cur_2 = "USD";crypt_multi_display_time = false;
+</script>
+<script src="js/currency_widget.min.js"></script>
+<script src="js/jquery.flexslider-min.js"></script>
+
+@@if(articlePage===true || eventPage===true || videoPage===true){<script type="text/javascript">
+function getSlidesWidth(){
+	var mw = $('body').innerWidth();
+	var si = $('#slider').innerWidth();
+	if(mw<576)
+		return si/1.5;
+	if(mw<768)
+		return si;
+	if(mw<992)
+		return si/2;
+	return si/3;
+}
+
+$(window).load(function(){
+	$('#slider').flexslider({
+		animation: "slide",
+		controlNav: false,
+		animationLoop: false,
+		slideshow: false,
+		itemWidth: getSlidesWidth(),
+		itemMargin: 0,
+		controlsContainer: $(".custom-controls-container"),
+		customDirectionNav: $(".custom-navigation a")
+	});
+});
+</script>
+<script src="https://yastatic.net/share2/share.js"></script>}
+
+@@if(calendar===true){<script src="js/add-event-form.min.js"></script>}

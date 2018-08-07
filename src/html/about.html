@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('templates/head.html')
+	<title>Coin Duck - новости блокчейн</title>
+</head>
+<body>
+	<header class="page-header">
+		@@include('templates/header.html',{"about":true})
+		
+		<nav class="breadcrumps-navigation mobile-hidden">
+			<div class="content-wrap">
+				<ul class="breadcrumps list-reset row">
+					<li>
+						<a class="breadcrumps-link" href="index.html">Главная</a>
+					</li>
+					<li>
+						<a class="breadcrumps-link active-link">О проекте</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="content-wrap">
+			<div class="row">
+				<!--main column-->
+				<div class="content-main-col static-pages col-md-9">
+					<main class="main-content">
+						<article class="site-block">
+							<div class="article-info-wrap light-bg">
+								<div class="article-info-header">
+									<h1 class="header-label">О проекте</h1>
+								</div>
+							</div>
+						
+							<div class="article-details-inner">
+								<p class="paragraph">Новостной портал Coin Duck — это команда энтузиастов, выступающих за развитие цифровых валют (криптовалют) и их распространение в русскоговорящих странах и по всему миру. Мы отслеживаем актуальные новости, освещаем события биткоин-индустрии, пишем о конференциях и других мероприятиях, а также делаем интервью с главными представителями криптосообщества.</p>
+								<p class="paragraph">E-mail для связи: <a class="read-more-link" href="mailto:hi@coinduck.ru">hi@coinduck.ru</a></p>
+							</div>
+						</article>
+					</main>
+					
+				</div>
+				<!-- /main column-->
+				
+				<!-- aside column -->
+				@@include('templates/content-aside-col.html',{"about":true})
+				<!-- /aside column -->
+			</div>
+	</div>
+	
+	<footer class="page-footer">
+		@@include('templates/footer.html',{"about":true})
+	</footer>
+
+	@@include('templates/scripts.html')
+</body>
+</html>

@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('templates/head.html')
+	<title>Coin Duck - новости блокчейн</title>
+</head>
+<body>
+	<header class="page-header">
+		@@include('templates/header.html',{"index":true})
+	</header>
+
+	<div class="content-wrap">
+		<div class="row">
+			<!--main column-->
+			<main class="content-main-col col-md-9">
+				<section class="main-news-block row">
+					<div class="col-lg-9 d-flex">
+						<section class="main-news article-preview d-flex">
+							<a class="news-block-link" href="article_page.html">
+								<img class="article-preview-pic" src="img/article-preview-1.png" alt="Confideal: гарант безопасной сделки в криптовалютном мире">
+								<div class="article-info-wrap dark-bg">
+									<div class="article-info-header">
+										<!-- <h2 class="header-label">Главная новость</h2> -->
+										<h2 class="header-label">Главные новости</h2>
+										<p class="article-info">
+											<time class="published-time" datetime="2017-11-01T22:41">01 ноября<span class="mobile-hidden"> 2017</span>, 22:41</time>
+											<span class="views-count"><img class="views-count-img" src="img/view-count.svg" alt="Количество просмотров:">2550</span>
+										</p>
+									</div>
+									<div class="main-new-inner">
+										<div class="header main-news-header-link main-news-header">Confideal: гарант безопасной сделки в криптовалютном мире</div>
+										<p class="paragraph main-news-preview">Внешэкономбанк (ВЭБ) и Ethereum Foundation подписали соглашение о долгосрочном партнерстве. Данное событие сильно изменит и укрепит отношения между... <span class="read-more-link">Читать далее</span></p>
+									</div>
+								</div>
+							</a>
+						</section>
+					</div>
+					<div class="col-lg-3 d-block">
+						<div class="row col-equal-vertical">
+							<div class="col-lg-12 col-md-6 d-flex">
+								<section class="theme-of-the-day-block article-preview">
+									<a class="news-block-link" href="article_page.html">
+										<img class="article-preview-pic" src="img/article-preview-2.png" alt="Confideal: гарант безопасной сделки в криптовалютном мире">
+										<div class="article-info-wrap dark-bg">
+											<div class="article-info-header">
+												<h2 class="header-label">Тема дня</h2>
+												<p class="article-info">
+													<time class="published-time" datetime="2017-11-01T22:41">01 ноября<span class="mobile-hidden"> 2017</span>, 22:41</time>
+													<span class="views-count"><img class="views-count-img" src="img/view-count.svg" alt="Количество просмотров:">2550</span>
+												</p>
+											</div>
+											<div class="header main-news-header-link header-small-link article-header-small">ICO проект: как совершить успешное вложение</div>
+										</div>
+									</a>
+								</section>
+							</div>
+							<div class="col-lg-12 col-md-6 d-flex">
+								<section class="editors-choice article-preview">
+									<a class="news-block-link" href="article_page.html">
+										<img class="article-preview-pic" src="img/article-preview-3.png" alt="Confideal: гарант безопасной сделки в криптовалютном мире">
+										<div class="article-info-wrap dark-bg">
+											<div class="article-info-header">
+												<h2 class="header-label">
+													<span class="header-label-short" aria-hidden="true" title="Выбор редакции">Советуем</span>
+													<span class="header-label-long">Выбор редакции</span>
+												</h2>
+												<p class="article-info">
+													<time class="published-time" datetime="2017-11-01T22:41">01 ноября<span class="mobile-hidden"> 2017</span>, 22:41</time>
+													<span class="views-count"><img class="views-count-img" src="img/view-count.svg" alt="Количество просмотров:">2550</span>
+												</p>
+											</div>
+											<div class="header main-news-header-link header-small-link article-header-small">LavkaLavka и «Восход» планируют войти в криптовалютную «песочницу» Центробанка.</div>
+										</div>
+									</a>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div class="banner-wide site-block">
+					Баннерная площака
+				</div>
+
+				<section class="bitcoin-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Новости Bitcoin</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все новости<span class="mobile-hidden"> про Bitcoin</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+
+				<section class="altcoin-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Новости Altcoin</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все новости<span class="mobile-hidden"> про Altcoin</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+
+				<section class="upcoming-events site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Календарь</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все мероприятия</a>
+					</div>
+					<ul class="upcoming-events-list list-reset">
+						<li class="upcoming-events-item">
+							<div class="event-date-wrap learning">
+								<span class="event-day">пн</span>
+								<span class="event-date">01</span>
+								<span class="event-month">ноября</span>
+							</div>
+							<div class="paragraph event-anounce-wrap">
+								<a class="article-header-link header article-header event-header" href="#">Тренинг «Эксперты блокчейн». Спикер Саша Иванов от Waves.</a>
+								<p class="paragraph event-anounce">Время начала - 19:00, окончание в 23:00. Вход по заранее купленным билетам. Опоздавшие не допускаются на мероприятие. Двери закрываем ровно в 19:00.</p>
+								<p class="event-info">
+									<span class="event-info-item">Москва, Россия</span>
+									<span class="event-info-item">Начало в 19:30</span>
+									<span class="event-info-item">Цена от 3000<span class="ruble">Р</span></span>
+								</p>
+								<a class="read-more-link" href="#">Подробнее</a>
+							</div>
+						</li>
+						<li class="upcoming-events-item">
+							<div class="event-date-wrap learning">
+								<span class="event-day">пн</span>
+								<span class="event-date">07</span>
+								<span class="event-month">ноября</span>
+							</div>
+							<div class="paragraph event-anounce-wrap">
+								<a class="article-header-link header article-header event-header" href="#">Упаковка ICO 2.0: PR, технологии, трафик.</a>
+								<p class="paragraph event-anounce">ICO-практики упаковки проектов поделятся секретами. Как собрать трастовый капитал? Как построить сообщество? Что такое Investor Relationships? Трафик из соцсетей: когда и какой? </p>
+								<p class="event-info">
+									<span class="event-info-item">Москва, Россия</span>
+									<span class="event-info-item">Начало в 19:30</span>
+									<span class="event-info-item">Цена от 3000<span class="ruble">Р</span></span>
+								</p>
+								<a class="read-more-link" href="#">Подробнее</a>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<section class="blockchain-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Новости Blockchain</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все новости<span class="mobile-hidden"> про Blockchain</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+
+				<section class="analitics-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Аналитика</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть всю аналитику от наших трейдеров</span><span class="mobile-visible">вся аналитика</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+
+				<section class="politics-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Политика</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все новости<span class="mobile-hidden"> политики</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+
+				<section class="ico-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">ICO</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все новости<span class="mobile-hidden"> про ICO</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+
+				<section class="mining-news-block site-block">
+					<div class="site-block-header">
+						<h2 class="header-label">Майнинг</h2>
+						<a class="site-block-link" href="#"><span class="mobile-hidden">посмотреть </span>все новости<span class="mobile-hidden"> про майнинг</span></a>
+					</div>
+					@@include('templates/index-articles.html')
+				</section>
+			</main>
+			<!-- /main column-->
+
+			<!-- aside column -->
+			@@include('templates/content-aside-col.html')
+			<!-- /aside column -->
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		@@include('templates/footer.html',{"index":true})
+	</footer>
+
+	@@include('templates/scripts.html')
+</body>
+</html>

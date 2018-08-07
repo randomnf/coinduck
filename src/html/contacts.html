@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('templates/head.html')
+	<title>Coin Duck - новости блокчейн</title>
+</head>
+<body>
+	<header class="page-header">
+		@@include('templates/header.html',{"contacts":true})
+		
+		<nav class="breadcrumps-navigation mobile-hidden">
+			<div class="content-wrap">
+				<ul class="breadcrumps list-reset row">
+					<li>
+						<a class="breadcrumps-link" href="index.html">Главная</a>
+					</li>
+					<li>
+						<a class="breadcrumps-link active-link">Контакты</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	
+	<div class="content-wrap">
+			<div class="row">
+				<!--main column-->
+				<div class="content-main-col static-pages col-md-9">
+					<main class="main-content">
+						<article class="article-page site-block">
+							<div class="article-info-wrap light-bg">
+								<div class="article-info-header">
+									<h1 class="header-label">Контакты для связи с редакцией</h1>
+								</div>
+							</div>
+						
+							<div class="article-details-inner">
+								<p class="paragraph">Наша редакция отвечает на все вопросы, мы открыты к сотрудничеству и всегда на связи. Пишите нам на емайл - <a class="read-more-link" href="mailto:hi@coinduck.ru">hi@coinduck.ru</a>, либо задавайте ваши вопросы через форму обратной связи ниже:</p>
+							</div>
+							
+							<form class="feedback-form site-form row" action="" method="post">
+								<div class="col-md-4">
+									<div class="form-inner-wrap">
+										<label class="form-label" for="feedback-name">Ваше имя: <span class="red-star">*</span></label>
+										<input class="form-input feedback-name" type="text" id="feedback-name" name="feedback-name" required>
+									</div>
+									<div class="form-inner-wrap">
+										<label class="form-label" for="feedback-phone">Телефон: <span class="red-star">*</span></label>
+										<input class="form-input feedback-phone" type="phone" id="feedback-phone" name="feedback-phone" required>
+									</div>
+									<div class="form-inner-wrap">
+										<label class="form-label" for="feedback-email">E-mail:</label>
+										<input class="form-input feedback-email" type="email" id="feedback-email" name="feedback-email" >
+									</div>
+								</div>
+								<div class="msg-wrap col-md-8">
+									<div class="form-inner-wrap">
+										<label class="form-label" for="form-msg">Сообщение: <span class="red-star">*</span></label>
+										<textarea class="form-msg" id="form-msg" name="form-msg" required></textarea>
+									</div>
+								</div>
+								<div class="col-12 row no-gutters justify-content-between">
+									<div class="submit-wrap-col-1 col-md">
+										<div class="form-inner-wrap">
+											<input class="feedback-pdata" type="checkbox" id="feedback-pdata" name="feedback-pdata" >
+											<label class="feedback-pdata-label" for="feedback-pdata">Я согласен на <a class="read-more-link" href="#">обработку персональных данных</a></label>
+										</div>
+										<span class="feebback-footnote"><span class="white-star">*</span> - Обязательные поля</span>
+									</div>
+									<div class="submit-wrap-col-2 col-md-3 d-flex">
+										<input class="submit-btn" type="submit" value="Отправить">
+									</div>
+								</div>
+							</form>
+						</article>
+					</main>
+					
+				</div>
+				<!-- /main column-->
+				
+				<!-- aside column -->
+				@@include('templates/content-aside-col.html',{"contacts":true})
+				<!-- /aside column -->
+			</div>
+	</div>
+	
+	<footer class="page-footer">
+		@@include('templates/footer.html',{"contacts":true})
+	</footer>
+
+	@@include('templates/scripts.html')
+</body>
+</html>

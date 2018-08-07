@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	@@include('templates/head.html')
+	<title>Coin Duck - новости блокчейн</title>
+</head>
+<body>
+	<header class="page-header">
+		@@include('templates/header.html')
+
+		<nav class="breadcrumps-navigation mobile-hidden">
+			<div class="content-wrap">
+				<ul class="breadcrumps list-reset row">
+					<li>
+						<a class="breadcrumps-link" href="index.html">Главная</a>
+					</li>
+					<li>
+						<a class="breadcrumps-link" href="video.html">Видео про Bitcoin</a>
+					</li>
+					<li>
+						<a class="breadcrumps-link active-link">Билл Гейтс: &laquo;Никто не может остановить биткойн!&raquo;</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<div class="content-wrap">
+			<div class="row">
+				<!--main column-->
+				<div class="content-main-col col-md">
+					<main class="main-content article-content">
+						<article class="video-details site-block">
+							<div class="site-block-header">
+								<h2 class="header-label">Видео</h2>
+							</div>
+							<div class="site-block-header">
+								<h1 class="article-header">Билл Гейтс: &laquo;Никто не может остановить биткойн!&raquo;</h1>
+							</div>
+							<div class="article-details-inner">
+								<div class="video-desc-wrap">
+									<p class="paragraph video-desc-text">Безукоризненное исполнение обязательств – не столь частое явление в нашем мире как бы хотелось. Выход – третья сторона-посредник, которая будет удерживать средства до исполнения условий договора и при необходимости станет арбитром в споре. Сервис Confideal в данном случае может быть крайне полезным.</p>
+									<p class="paragraph video-desc-text">Безукоризненное исполнение обязательств – не столь частое явление в нашем мире как бы хотелось. Выход – третья сторона-посредник, которая будет удерживать средства до исполнения условий договора и при необходимости станет арбитром в споре. Сервис Confideal в данном случае может быть крайне полезным.</p>
+								</div>
+								<iframe class="video-frame" src="https://www.youtube.com/embed/aNLTyaW5MNE"></iframe>
+								<div class="follow-us-block">
+									<b class="paragraph subscribe-share-text">Подписывайтесь на новости <a class="read-more-link" href="#">CoinDuck в Telegram</a> и делитесь в соцсетях:</b>
+									<ul class="share-list list-reset">
+										<li class="share-item">
+											<div class="ya-share2 facebook-share" data-services="facebook"></div>
+										</li>
+										<li class="share-item">
+											<div class="ya-share2 twitter-share" data-services="twitter"></div>
+										</li>
+										<li class="share-item">
+											<div class="ya-share2 vk-share" data-services="vkontakte"></div>
+										</li>
+										<li class="share-item">
+											<div class="ya-share2 telegram-share" data-services="telegram"></div>
+										</li>
+										<li class="share-item">
+											<div class="ya-share2 whatsapp-share" data-services="whatsapp"></div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</article>
+					</main>
+
+					@@include('templates/more-news-slider.html')
+				</div>
+				<!-- /main column-->
+
+				<!-- detail page aside column -->
+				@@include('templates/detail-page-aside-col.html')
+				<!-- /detail page aside column -->
+
+				<!-- aside column -->
+				@@include('templates/content-aside-col.html',{"video":true})
+				<!-- /aside column -->
+			</div>
+	</div>
+
+	<footer class="page-footer">
+		@@include('templates/footer.html')
+	</footer>
+
+	@@include('templates/scripts.html',{"videoPage":true})
+</body>
+</html>
